@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tip Calc</title>
+    <link rel="stylesheet" href="app.css">
+  </head>
+  <body>
+    <h1>Tip Calculator</h1>
+    <form action="index.html" method="get" onsubmit="return false" >
+      <input type="text" name="enter" id="enter" placeholder="Enter bill total." value="">
+      <select name="select" id="select" placeholder="How much?">
+        <option value="" disabled selected>How much?</option>
+        <option value=0.1>10%</option>
+        <option value=0.15>15%</option>
+        <option value=0.2>20%</option>
+      </select>
+      <input type="submit" name="submit" id="submit" value="Calculate Tip">
+    </form>
+
+    <h3 id="total"></h3>
+
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
